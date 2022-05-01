@@ -58,14 +58,14 @@ const questions = [
         validate: (valueInput=>{if(valueInput){return true} else {return " provide something useful"}})
     },
 // License //
-    {
-        type: "list",
-        name: "license",
-        message:"Choose the license for your project."
-        choices:['MIT', 'Apache','GPL','none']
-        validate: (licenseInput=>{if(licenseInput){return true} else {return " Pick a license or choose none."}})
+    // {
+    //     type: "list",
+    //     name: "license",
+    //     message:"Choose the license for your project."
+    //     choices:['MIT', 'Apache','Mozilla',]
+    //     validate: (licenseInput=>{if(licenseInput){return true} else {return " Pick a license."}})
 
-    },
+    // },
 // Contributing //
     {
         type: "input",
