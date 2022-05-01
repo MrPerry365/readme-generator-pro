@@ -51,12 +51,11 @@ ${data.usage},
 ## license
 ${data.license},
 
-## contributors
-${data.contributors},
-
 ## test
 ${data.test},
 
+## contributors
+${data.contributors},
 ## questions
 ### If you have any questions, contact me at:
 
@@ -67,4 +66,5 @@ Email Address [${data.email}](https://1987NowHere@gmail.com)
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown};
+
