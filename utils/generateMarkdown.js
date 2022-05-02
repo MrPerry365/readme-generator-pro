@@ -9,28 +9,33 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license ==='Apache ') {
-    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-},
-  }
+    return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'  
+};
+  
+ if (license ==='MIT') {
+   return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+};
+
+if (license ==='Mozilla') {
+  return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
+};
+
+}
    
 
-// MIT License
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
- if (license ==='MIT') {
-   '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-},
-}
+// // MIT License
+// // TODO: Create a function that returns the license link
+// // If there is no license, return an empty string
+// function renderLicenseLink(license) {
+//  i
+// }
 
-// Mozilla Public License
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
- if (license ==='Mozilla' {
-   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
-},
-}
+// // Mozilla Public License
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
+// function renderLicenseSection(license) {
+//  if 
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
