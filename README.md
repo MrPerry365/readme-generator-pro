@@ -22,7 +22,7 @@ Author: MrPerry
 node, npm inquirer
 
 ## Usage
-saves you time while keeping the README.md files for your pojects consistant
+saves you time while keeping the README.md files for your projects consistent
 
 ## Contributors
 no
