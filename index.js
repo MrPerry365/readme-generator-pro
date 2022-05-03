@@ -4,7 +4,8 @@ const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-inquirer.prompt([
+//inquirer.prompt([
+var questions = [
   // title of project //
   {
     type: "input",
@@ -46,7 +47,7 @@ inquirer.prompt([
     type: "list",
     name: "license",
     message: "Choose the license for your project.",
-    choices: ("MIT", "Apache", "Mozilla"),
+    choices: ["MIT", "Apache", "Mozilla"],
   },
   // Contributing //
   {
@@ -66,17 +67,26 @@ inquirer.prompt([
     name: "author",
     message: "What is the authors name?",
   },
-]);
+];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  const template = generateMarkdown(data);
+function writeToFile(title, answers) {
+  const template = generateMarkdown(answers);
   console.log(template);
+
+  fs.writeFile("README.md", template, function (err){
+      if (err) {
+          throw err;
+      };
+    
+  });
+
+console.log("The README.md file has been generated");
 }
 
 // TODO: Create a function to initialize app
-function init() {
-  inquirer
+async function init() {
+  await inquirer
     .prompt(questions)
 
     .then((answers) => {
@@ -85,6 +95,7 @@ function init() {
     })
     .catch((error) => {
       if (error.isError) {
+        console.log(error);
         return false;
         // Prompt couldn't be rendered in the current environment
       } else {
@@ -93,20 +104,11 @@ function init() {
       }
     });
 }
-
-then((data) => {
-  console.log(data);
-  fs.writeFile("README.md", generateMarkdown(data)),
-    (error) => {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("README.md generated successfully");
-      }
-    };
-});
-
 // Function call to initialize app
 init();
 
-module.exports = questions;
+// inquirer.prompt(questions).then((answers) => {
+//     console.log(answers);
+// });
+
+// module.exports = answers;
