@@ -31,11 +31,14 @@ no
 ### MIT
 ### link: (https://opensource.org/licenses/MIT)
 
-## Test
-N/A
+## Test video demo
+- copy and paste link in the browser for the demo
+
+file:///Users/thisiskyle/projects/challenge/readme-generator/howToRecording/readme%20generator%20vid.webm
 
 
 ## Questions
+
 ### If you have any questions, contact me at:
 
 #### GitHub Username: [MrPerry365]
