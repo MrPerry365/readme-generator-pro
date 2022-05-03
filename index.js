@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// an array of questions for user input
 //inquirer.prompt([
 var questions = [
   // title of project //
@@ -12,8 +12,8 @@ var questions = [
     name: "title",
     message: "What is your project title?",
   },
-   // description of project ///
-   {
+  // description of project ///
+  {
     type: "input",
     name: "description",
     message: "Describe this project.",
@@ -75,22 +75,21 @@ var questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+//function to write README file
 function writeToFile(title, answers) {
   const template = generateMarkdown(answers);
   console.log(template);
 
-  fs.writeFile("README.md", template, function (err){
-      if (err) {
-          throw err;
-      };
-    
+  fs.writeFile("README.md", template, function (err) {
+    if (err) {
+      throw err;
+    }
   });
 
-console.log("The README.md file has been generated");
+  console.log("The README.md file has been generated");
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 async function init() {
   await inquirer
     .prompt(questions)
@@ -103,8 +102,8 @@ async function init() {
       if (error.isError) {
         console.log(error);
         return false;
-        // Prompt couldn't be rendered in the current environment
-      } else {
+      }
+      else {
         // Something else went wrong
         console.log(error);
       }
@@ -112,9 +111,5 @@ async function init() {
 }
 // Function call to initialize app
 init();
-
-// inquirer.prompt(questions).then((answers) => {
-//     console.log(answers);
-// });
 
 // module.exports = answers;

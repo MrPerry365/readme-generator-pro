@@ -1,9 +1,4 @@
-// const fs = require('fs');
-// const inquirer = require('inquirer');
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// Apache license
-// If there is no license, return an empty string
+// function that returns a license badge 
 function renderLicenseBadge(licenseSection) {
   if (licenseSection === "Apache ") {
     badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
@@ -19,9 +14,9 @@ function renderLicenseBadge(licenseSection) {
   return badge;
 }
 
-// // MIT License
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
+
+// function that returns the license link
+
 function renderLicenseLink(licenseSection) {
   if (licenseSection === "Apache") {
     licenseLink = "(https://opensource.org/licenses/Apache-2.0)";
@@ -35,19 +30,7 @@ function renderLicenseLink(licenseSection) {
   return licenseLink;
 }
 
-// // Mozilla Public License
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(answers) {
-// var licenseSection = ${answers.license};
-
-
-
-// return ;
-// }
-
-
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown(answers) {
   var license = `${answers.license}`;
   var licBadge = renderLicenseBadge(license);
