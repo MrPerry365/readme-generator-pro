@@ -6,9 +6,9 @@ author: lkdmc
 
 ## Table of Contents:
 
-*[username](#username)
-*[profile](#profile)
-*[*email](#email)
+- [username](#username)
+- [profile](#profile)
+- [*email](#email)
 *[installation](#installation)
 *[usage](#usage)
 *[license](#license)
