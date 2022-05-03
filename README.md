@@ -1,6 +1,6 @@
 
-  # README Generator Pro
-## After answering command prompt questions a quality README.md will be generated.
+  # README generator pro
+## answer the questions in the command line and a quality readme.md will be generated
   
 ## Badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
@@ -19,13 +19,13 @@ Author: MrPerry
 - [questions](#questions),
 
 ## Installation
-node, npm - inquirer
+node, npm inquirer
 
 ## Usage
-This saves you time and provides consistency to all your README.md's for your projects
+saves you time while keeping the README.md files for your pojects consistant
 
 ## Contributors
-None
+no
 
 ## License
 ### MIT
@@ -38,9 +38,9 @@ N/A
 ## Questions
 ### If you have any questions, contact me at:
 
-#### GitHub Username: [MrPerry]
+#### GitHub Username: [MrPerry365]
 
-#### GitHub Profile: [MrPerry365@github.com]
+#### GitHub Profile: [https://github.com/MrPerry365/readme-generator-pro.git]
 
 #### Email Address: [1987nowhere@gmail.com]
 
