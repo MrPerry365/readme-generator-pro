@@ -62,31 +62,31 @@ function generateMarkdown(answers) {
 author: ${answers.author}
 
 ## Table of Contents:
--[username](#username),
--[profile](#profile),
--[email](#email),
--[installation](#installation),
--[usage](#usage),
--[license](#license),
--[contributors](#contributors),
--[test](#test),
--[author](#author),
--[questions](#questions),
+- [username](#username),
+- [profile](#profile),
+- [email](#email),
+- [installation](#installation),
+- [usage](#usage),
+- [license](#license),
+- [contributors](#contributors),
+- [test](#test),
+- [author](#author),
+- [questions](#questions),
 
 ## installation
-${answers.installation},
+${answers.installation}
 
 ## usage
-${answers.usage},
+${answers.usage}
 
 ## license
-${answers.license},
+${answers.license}
 
 ## test
-${answers.test},
+${answers.test}
 
 ## contributors
-${answers.contributors},
+${answers.contributors}
 
 ## questions
 ### If you have any questions, contact me at:

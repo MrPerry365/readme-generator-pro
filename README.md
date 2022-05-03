@@ -1,41 +1,40 @@
 
-  # iuho
+  # README.md Generator Pro
 ## badge: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 ## link: (https://opensource.org/licenses/MIT)
-author: lkdmc
+author: Me
 
 ## Table of Contents:
-
-- [username](#username)
-- [profile](#profile)
-- [*email](#email)
-*[installation](#installation)
-*[usage](#usage)
-*[license](#license)
-*[contributors](#contributors)
-*[test](#test)
-*[author](#author)
-*[questions](#questions)
+- [username](#username),
+- [profile](#profile),
+- [email](#email),
+- [installation](#installation),
+- [usage](#usage),
+- [license](#license),
+- [contributors](#contributors),
+- [test](#test),
+- [author](#author),
+- [questions](#questions),
 
 ## installation
-ksjdckn,
+node: npm: Inquirer: fs:
 
 ## usage
-kdjncke,
+Through the command line, answered prompts will generate into a qualit README.md
 
 ## license
-MIT,
+MIT
 
 ## test
-kdnsc,
+N/A
 
 ## contributors
-kdnflem,
+No
 
 ## questions
 ### If you have any questions, contact me at:
 
-GitHub Profile [dkjcjen](https://github.com/MrPerry365)
+GitHub Profile [mrperry365@github.com](https://github.com/MrPerry365)
 
-Email Address [kdjckdb](https://1987NowHere@gmail.com)
+Email Address [1987NowHere@gmail.com](https://1987NowHere@gmail.com)
 
