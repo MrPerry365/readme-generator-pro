@@ -12,6 +12,12 @@ var questions = [
     name: "title",
     message: "What is your project title?",
   },
+   // description of project ///
+   {
+    type: "input",
+    name: "description",
+    message: "Describe this project.",
+  },
   // Github username //
   {
     type: "input",

@@ -57,9 +57,11 @@ function generateMarkdown(answers) {
   
   return `
   # ${answers.title}
-## badge: ${licBadge}
-## link: ${licLink}
-author: ${answers.author}
+## ${answers.description}
+  
+## Badge: ${licBadge}
+
+Author: ${answers.author}
 
 ## Table of Contents:
 - [username](#username),
@@ -73,27 +75,31 @@ author: ${answers.author}
 - [author](#author),
 - [questions](#questions),
 
-## installation
+## Installation
 ${answers.installation}
 
-## usage
+## Usage
 ${answers.usage}
 
-## license
-${answers.license}
-
-## test
-${answers.test}
-
-## contributors
+## Contributors
 ${answers.contributors}
 
-## questions
+## License
+### ${answers.license}
+### link: ${licLink}
+
+## Test
+${answers.test}
+
+
+## Questions
 ### If you have any questions, contact me at:
 
-GitHub Profile [${answers.profile}](https://github.com/MrPerry365)
+#### GitHub Username: [${answers.username}]
 
-Email Address [${answers.email}](https://1987NowHere@gmail.com)
+#### GitHub Profile: [${answers.profile}]
+
+#### Email Address: [${answers.email}]
 
 `;
 }
