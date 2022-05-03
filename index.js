@@ -102,8 +102,7 @@ async function init() {
       if (error.isError) {
         console.log(error);
         return false;
-      }
-      else {
+      } else {
         // Something else went wrong
         console.log(error);
       }

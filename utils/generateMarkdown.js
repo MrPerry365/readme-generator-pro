@@ -1,30 +1,30 @@
-// function that returns a license badge 
+// function that returns a license badge
 function renderLicenseBadge(licenseSection) {
   if (licenseSection === "Apache ") {
-    badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
+    badge =
+      "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
   }
 
   if (licenseSection === "MIT") {
-    badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+    badge =
+      "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
   }
 
   if (licenseSection === "Mozilla") {
-    badge = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]";
+    badge =
+      "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]";
   }
   return badge;
 }
-
 
 // function that returns the license link
 
 function renderLicenseLink(licenseSection) {
   if (licenseSection === "Apache") {
     licenseLink = "(https://opensource.org/licenses/Apache-2.0)";
-  }
-  else if (licenseSection === "MIT") {
+  } else if (licenseSection === "MIT") {
     licenseLink = "(https://opensource.org/licenses/MIT)";
-  }
-  else if (licenseSection === "Mozilla") {
+  } else if (licenseSection === "Mozilla") {
     licenseLink = "(https://opensource.org/licenses/MPL-2.0)";
   }
   return licenseLink;
@@ -35,9 +35,7 @@ function generateMarkdown(answers) {
   var license = `${answers.license}`;
   var licBadge = renderLicenseBadge(license);
   var licLink = renderLicenseLink(license);
-  
-  
-  
+
   return `
   # ${answers.title}
 ## ${answers.description}
@@ -87,4 +85,4 @@ ${answers.test}
 `;
 }
 
-module.exports = generateMarkdown ;
+module.exports = generateMarkdown;
